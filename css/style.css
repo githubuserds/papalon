@@ -1,0 +1,84 @@
+/* Base web */
+* {
+     font-family: "Gentium Book Plus", serif;
+     font-style: italic !important;
+}
+
+/* Variales globales */
+:root {
+     --warning: #ffc107;
+     --warning_rgba: rgba(255,193,7, 1);
+     --white: #f4f4f4;
+     --black: #000000;
+     --gray: #aaaaaa;
+     --background: url(imgs/background.jpg);
+}
+
+/* Componentes */
+
+/* Scroll contenedor */
+::-webkit-scrollbar {
+     display: none;
+}
+
+/* Scroll barra */
+::-webkit-scrollbar-thumb {
+     display: none;
+}
+
+/* Body */
+body {
+     background-image: var(--background);
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+/* Equiqueta i */
+i {
+     color: var(--warning);
+     font-style: normal !important;
+}
+
+/* Contenedor del header */
+.css_menu {
+     margin-top: 2% !important;
+     background-color: var(--white) !important;
+}
+
+/* Card Card-body */
+.css_content {
+     background-color: var(--gray) !important;
+}
+
+/* Div headers del form */
+.css_headers {
+     background-color: var(--white) !important;
+     /* height: 45px !important; */
+}
+
+/* Input del form */
+input:focus{
+     border-color: var(--warning_rgba) !important;
+     box-shadow: 0 0 8px var(--warning_rgba) !important;
+     outline: 0 none !important;
+}
+
+/* btn submit form */
+/* icono del btn del form */
+.css_i {
+     color: var(--black) !important;
+}
+
+/* btn submit del form */
+.css_btn {
+     background-color: var(--white);
+     border: 1px solid var(--warning_rgba);
+     color: var(--black) !important;
+}
+
+/* Hover del btn submit del form */
+.css_btn:hover {
+     background-color: var(--warning);
+     border: 1px solid var(--warning_rgba);
+     transition: 0.8s;
+}
